@@ -32,7 +32,7 @@ Para ver un plato en particular:
 
 Para modificar un plato en particular:
     usar el método PUT http://localhost:3000/platos/editar/63f2adab49a77ffe20742145 (siendo 63f2adab49a77ffe20742145 el id de un plato ya existente)
-    con un json son estos campos:
+    con un json son estos campos:(el precioConDcto tiene que ser menor o igual al precio, caso contrario muestra error)
         {
         "plato":"nombreDelplato",
         "descripcion": "Texto libre con detalle del plato",
