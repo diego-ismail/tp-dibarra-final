@@ -5,7 +5,7 @@ Configuracion:
 Renombrar el archivo .env.example a .env
 
 Inicio del servidor:
-Ejecutar: npm run dev
+Ejecutar: npm run start
 
 LLAMADAS A LAS API's:
 Para crear un plato:

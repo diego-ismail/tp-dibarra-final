@@ -19,11 +19,11 @@ const schema = new Schema({
         type: Number,
         required: true,
     },
-    AptoCeliaco: {
+    aptoCeliaco: {
         type: Boolean,
         required: true
     },
-    AptoVegano: {
+    aptoVegano: {
         type: Boolean,
         required: true       
     }

@@ -2,6 +2,7 @@ const { Plato } = require("../models/plato")
 const {validationResult} = require("express-validator")
 
 
+
 module.exports = {
     async guardarPlato (req, res) {
         try {
@@ -46,7 +47,7 @@ module.exports = {
             console.log ("error:", err)
             if (err.isEmpty()) {
                 const plato = await Plato.findByIdAndDelete(req.params.id)
-                res.status(200).json({msg: `Plato Eliminado ${plato.nombre}`})
+                res.status(200).json({msg: `Plato Eliminado ${plato.plato}`})
             } else {
                 res.status(501).json(err)
             }
