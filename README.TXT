@@ -1,11 +1,16 @@
 Documentación:
 El programa sirve para guardar platos de comida y verlos.
+Luego tiene una ruta /nutricion donde consulta una api externa y nos devuelve una lista de platos e info nutricional
 
 Configuracion:
 Renombrar el archivo .env.example a .env
 
 Inicio del servidor:
 Ejecutar: npm run start
+LLAMADA a API Externa:
+Para ver un alimento en particular:
+    usar el método GET http://localhost:3000/nutricion/ver/banana (siendo banana el parámetro a buscar)
+    *Aclaración, la libreria externa está en ingles, con lo cual los alimentos deben ingresarse en ingles (apple, carrot, pineapple, cookie)
 
 LLAMADAS A LAS API's:
 Para crear un plato:
