@@ -5,7 +5,7 @@ require("dotenv").config()
 
 const app = express()
 const indexRouter = require("./routes/index")
-const userRouter = require("./routes/user")
+const platoRouter = require("./routes/plato")
 const {connect} = require("./db/db")
 
 app.use(logger("dev"))
@@ -13,7 +13,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use( "/", indexRouter )
-//app.use("/usuarios", userRouter);
+app.use("/platos", platoRouter);
 //
 
 connect()

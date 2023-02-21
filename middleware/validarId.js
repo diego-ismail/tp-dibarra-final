@@ -1,7 +1,7 @@
-const { User } = require("../models/user")
+const { Plato } = require("../models/plato")
 const validarID = async(req, res, next)=>{
     try {
-        const item = await User.findById(req.params.id)
+        const item = await Plato.findById(req.params.id)
         if (item !== null) {
             next()
         } else {
